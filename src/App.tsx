@@ -3,14 +3,15 @@
 // import viteLogo from '/vite.svg'
 // import './App.css'
 
-import {useEffect} from "react";
+import { useEffect } from "react";
 
 function App() {
-
   useEffect(() => {
     // baseFrequency Control
-    (function() {
-      const bFControl = document.getElementById("bFControl") as HTMLInputElement;
+    (function () {
+      const bFControl = document.getElementById(
+        "bFControl",
+      ) as HTMLInputElement;
       const bFSVG = document.querySelector("#bFControl ~ svg") as SVGElement;
       const effect = bFSVG?.querySelector("feTurbulence");
       const val = document.querySelector("#value");
@@ -19,11 +20,11 @@ function App() {
       bFControl?.addEventListener("input", updatebFSVG);
 
       function updatebFSVG() {
-        let v = bFControl.value;
+        const v = bFControl.value;
 
         if (!val) {
           console.log();
-          return
+          return;
         }
 
         val.innerText = v;
@@ -31,25 +32,43 @@ function App() {
         effect?.setAttribute("baseFrequency", v);
       }
     })();
-  }, [])
+  }, []);
 
   return (
-      <div className="wrapper">
-        <label htmlFor="bFControl">baseFrequency</label>
-        <input type="range" min="0.01" max="1" value="0.05" step="0.01" id="bFControl"/> <span id="value">0.05</span>
+    <div className="wrapper">
+      <label htmlFor="bFControl">baseFrequency</label>
+      <input
+        type="range"
+        min="0.01"
+        max="1"
+        value="0.05"
+        step="0.01"
+        id="bFControl"
+      />{" "}
+      <span id="value">0.05</span>
+      <svg width="250" height="250">
+        <filter id="noise" x="0%" y="0%" width="100%" height="100%">
+          <feTurbulence baseFrequency={0.42} />
+          <feColorMatrix
+            type="matrix"
+            values="0.7 0 0 0 0
+                    0 0 0 0 0
+                    0 0 0 0 0
+                    0 0 0 0.4 0"
+          />
+        </filter>
 
-
-        <svg width="250" height="250">
-
-          <filter id='noise' x='0%' y='0%' width='100%' height='100%'>
-            <feTurbulence baseFrequency="0.05"/>
-          </filter>
-
-          <rect x="0" y="0" width="100%" height="100%" filter="url(#noise)" fill="none"/>
-
-        </svg>
-      </div>
-)
+        <rect
+          x="0"
+          y="0"
+          width="100%"
+          height="100%"
+          filter="url(#noise)"
+          fill="#CF6F70"
+        />
+      </svg>
+    </div>
+  );
 }
 
-export default App
+export default App;
