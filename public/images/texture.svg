@@ -1,0 +1,14 @@
+<svg width="100" height="100">
+    <filter id="noise" x="0%" y="0%" width="100%" height="100%">
+        <feTurbulence baseFrequency="0.39" ></feTurbulence>
+        <feColorMatrix
+        type="matrix"
+        values="0.3 0 0 0 0
+                0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 0.4 0"
+        ></feColorMatrix>
+    </filter>
+
+    <rect fill="#ff0000"x="0" y="0" width="100%" height="100%" filter="url(#noise)"></rect>
+</svg>

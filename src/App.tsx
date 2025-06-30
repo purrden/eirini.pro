@@ -1,72 +1,62 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
+import "./App.css";
+const indexes = Array(4).fill(0);
+// import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import { Player } from "@lottiefiles/react-lottie-player";
 
-import { useEffect } from "react";
+const animation = {
+  houseAmongLeavesAnimation: {
+    path: "./lottie/house_among_leaves.json",
+  },
+  peoplePlantingTogether: {
+    path: "./lottie/people_planting_together.json",
+  },
+};
 
 function App() {
-  useEffect(() => {
-    // baseFrequency Control
-    (function () {
-      const bFControl = document.getElementById(
-        "bFControl",
-      ) as HTMLInputElement;
-      const bFSVG = document.querySelector("#bFControl ~ svg") as SVGElement;
-      const effect = bFSVG?.querySelector("feTurbulence");
-      const val = document.querySelector("#value");
-
-      bFControl?.addEventListener("change", updatebFSVG);
-      bFControl?.addEventListener("input", updatebFSVG);
-
-      function updatebFSVG() {
-        const v = bFControl.value;
-
-        if (!val) {
-          console.log();
-          return;
-        }
-
-        val.innerText = v;
-
-        effect?.setAttribute("baseFrequency", v);
-      }
-    })();
-  }, []);
-
   return (
-    <div className="wrapper">
-      <label htmlFor="bFControl">baseFrequency</label>
-      <input
-        type="range"
-        min="0.01"
-        max="1"
-        value="0.05"
-        step="0.01"
-        id="bFControl"
-      />{" "}
-      <span id="value">0.05</span>
-      <svg width="250" height="250">
+    <div
+      className="wrapper"
+      style={
+        {
+          // backgroundColor: "#b56767",
+          // position: "absolute",
+          // width: "100%",
+          // height: "100%",
+        }
+      }
+    >
+      {/* <svg>
         <filter id="noise" x="0%" y="0%" width="100%" height="100%">
-          <feTurbulence baseFrequency={0.42} />
+          <feTurbulence baseFrequency={0.39} />
           <feColorMatrix
             type="matrix"
-            values="0.7 0 0 0 0
+            values="0.3 0 0 0 0
                     0 0 0 0 0
                     0 0 0 0 0
                     0 0 0 0.4 0"
           />
         </filter>
 
-        <rect
-          x="0"
-          y="0"
-          width="100%"
-          height="100%"
-          filter="url(#noise)"
-          fill="#CF6F70"
-        />
+        <rect x="0" y="0" width="100%" height="100%" filter="url(#noise)" />
       </svg>
+
+      <div>
+        {indexes.map((_, i) => {
+          console.log("pean");
+          return (
+            <div key={`lottie-a-${i + 1}`}>
+              <h1>ANIMA: {i + 1}</h1>(
+              <Player
+                style={{ width: 100, height: 100 }}
+                src={`./lottie/a${i + 1}.json`}
+                loop
+                autoplay
+              ></Player>
+              );
+            </div>
+          );
+        })} */}
+      {/* </div> */}
     </div>
   );
 }
