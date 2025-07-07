@@ -11,5 +11,5 @@
         />
     </filter>
 
-    <rect fill="#ff0000" x="0" y="0" width="800px" height="800px" filter="url(#noise)"/>
+    <rect fill="#ce7172" x="0" y="0" width="800px" height="800px" filter="url(#noise)"/>
 </svg>
