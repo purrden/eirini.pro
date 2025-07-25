@@ -1,0 +1,46 @@
+#title-sticker {
+  background-image: url(assets/images/section-sticker-green.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -53px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 438px;
+  height: 141px;
+  text-align: center;
+}
+
+#title-sticker h2 {
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  font-size: 36px;
+  z-index: 2;
+}
+
+#title-sticker::after {
+  content: "";
+  position: absolute;
+  mask-image: url(assets/images/section-sticker-green.svg);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  inset: 0;
+  background-image: url(assets/images/texture-green.svg);
+
+  /* opacity: 0.2; */
+}
+
+section#featured-projects {
+  position: relative;
+  background-color: var(--color-gold-texture);
+  padding: 48px 0 96px 0;
+}
+
+section#featured-projects::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(assets/images/texture-sand.svg);
+}

@@ -1,0 +1,20 @@
+section#eirini-intro {
+  position: relative;
+  background-color: var(--color-red-coral);
+  padding: 48px 0 96px 0;
+}
+
+section#eirini-intro::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(assets/images/texture-red.svg);
+}
+
+section#eirini-intro::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(assets/images/texture-red.svg);
+  opacity: 0.2;
+}

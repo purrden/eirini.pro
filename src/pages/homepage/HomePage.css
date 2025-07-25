@@ -1,37 +1,46 @@
 /* open-sans-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("./assets/fonts/open-sans-v43-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("./assets/fonts/open-sans-v43-latin-regular.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* open-sans-500 - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 500;
-    src: url("./assets/fonts/open-sans-v43-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("./assets/fonts/open-sans-v43-latin-500.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* open-sans-600 - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 600;
-    src: url("./assets/fonts/open-sans-v43-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("./assets/fonts/open-sans-v43-latin-600.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 body {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     --color-red-coral: #ce7172;
-    --color-golden-sand: #fdd495;
-    --color-aubergine: #2b1335;
-    --color-green-grass: #43ad7c;
+    --color-sand-animation: #f1ddb0;
+    --color-gold-texture: #fdbd59;
+    --color-aubergine-animations: #2b1335;
+    --color-green-animations: #43ad7c;
+    --color-green-texture: #83a76c;
+
     --card-background: rgba(255, 255, 255, 0.05);
     --card-border-radius: 16px;
     padding: 0;
@@ -61,7 +70,7 @@ button {
 }
 
 header {
-    background-color: var(--color-aubergine);
+    background-color: var(--color-aubergine-animations);
     padding: 24px 0;
 }
 
@@ -69,18 +78,8 @@ header .centered-column {
     padding: 0 8px;
 }
 
-section#eirini-intro {
-    position: relative;
-    background-color: var(--color-red-coral);
-    padding: 48px 0 96px 0;
-}
 
-section#eirini-intro::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url(assets/images/texture.svg);
-}
+
 
 .row {
     display: flex;
@@ -93,40 +92,8 @@ section#eirini-intro::before {
     align-items: flex-start;
 }
 
-header .centered-column {
-    display: flex;
-    align-items: center;
-}
 
-#logo {
-    height: 80px;
-}
 
-#lets-have-chat-button {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-#lets-chat-bubble {
-    background: url("assets/images/baloon-for-text.svg");
-    background-repeat: no-repeat;
-    width: 260px;
-    height: 60px;
-    text-transform: uppercase;
-    color: var(--color-aubergine);
-}
-
-#lets-chat-bubble p.desktop {
-    display: block;
-    padding-left: 24px;
-    margin-top: 16px;
-}
-
-#lets-chat-bubble p.mobile {
-    display: none;
-}
 
 /* section-end: header */
 /* ===================================================== */
@@ -187,9 +154,9 @@ header .centered-column {
 }
 
 
-    .intro-card:nth-child(2) .intro-chapter  {
-        padding-left: 24px;
-    }
+.intro-card:nth-child(2) .intro-chapter {
+    padding-left: 24px;
+}
 
 
 
@@ -235,10 +202,9 @@ header .centered-column {
         font-size: 17px;
     }
 
-    .intro-card:nth-child(2) .intro-chapter  {
+    .intro-card:nth-child(2) .intro-chapter {
         padding-left: 16px;
     }
-
 }
 
 @media only screen and (max-width: 900px) {
@@ -260,11 +226,11 @@ header .centered-column {
     }
 
     .intro-card .intro-chapter {
-        font-size: 16px ;
+        font-size: 16px;
         font-weight: 500;
     }
 
-    .intro-card:nth-child(2) .intro-chapter  {
+    .intro-card:nth-child(2) .intro-chapter {
         padding-left: 0;
     }
 
@@ -287,7 +253,7 @@ header .centered-column {
         order: 3;
     }
 
-    .intro-card-0 .player-container{
+    .intro-card-0 .player-container {
         margin-top: -8px;
     }
 
@@ -341,5 +307,15 @@ header .centered-column {
         display: block;
         transform: scaleX(-1);
         font-size: 14px;
+    }
+
+    #title-sticker {
+        top: -30px;
+        width: 240px;
+        height: 141px;
+    }
+
+    #title-sticker h2 {
+        font-size: 19px;
     }
 }
