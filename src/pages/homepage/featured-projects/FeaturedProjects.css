@@ -1,3 +1,7 @@
+#featured-projects {
+  flex-grow: 1;
+}
+
 #title-sticker {
   background-image: url(../../../assets/images/section-sticker-green.svg);
   background-size: contain;
