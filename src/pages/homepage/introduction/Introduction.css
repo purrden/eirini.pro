@@ -8,13 +8,169 @@ section#eirini-intro::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url(assets/images/texture-red.svg);
+  background-image: url(../../../assets/images/texture-red.svg);
+  opacity: 0.6;
+  transform: scaleX(-1);
 }
 
 section#eirini-intro::after {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url(assets/images/texture-red.svg);
-  opacity: 0.2;
+  background-image: url(../../../assets/images/texture-red.svg);
+  opacity: 0.55;
+}
+
+.intro-card {
+  flex-basis: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: var(--card-border-radius);
+  padding: 16px;
+}
+
+
+.intro-card:nth-child(1) {
+  padding-left: 0;
+}
+
+.intro-card:nth-child(3) {
+  padding-right: 0;
+}
+
+.intro-card .player-container {
+  width: 233px;
+  height: 233px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-card .lf-player-container,
+.intro-card:nth-child(2) .lf-player-container {
+  width: 233px;
+  height: 233px;
+}
+
+.intro-card:nth-child(2) .lf-player-container {
+  width: 210px;
+  height: 170px;
+}
+
+.intro-chapter {
+  font-family: "Open Sans";
+  font-weight: 400;
+  z-index: 1;
+  padding: 0;
+  font-size: 22px;
+}
+
+
+.intro-card:nth-child(2) .intro-chapter {
+  padding-left: 24px;
+  padding-right: 16px;
+}
+
+.intro-card:nth-child(3) .intro-chapter {
+  padding-left: 24px;
+}
+
+
+
+@media only screen and (max-width: 1280px) {
+  section#eirini-intro {
+    padding: 44px 0 90px 0;
+  }
+
+  .intro-card {
+    padding: 0;
+  }
+
+  .intro-card .lf-player-container {
+    width: 180px;
+    height: 190px;
+  }
+
+  .player-container {
+    width: 233px;
+    height: 182px;
+  }
+
+  .intro-card:nth-child(2) .lf-player-container {
+    width: 150px;
+    height: 120px;
+  }
+
+
+  .intro-card:nth-child(1) .player-container {
+    margin-left: -28px;
+  }
+
+  .intro-card:nth-child(3) .player-container {
+    margin-right: -20px;
+  }
+
+
+  .intro-chapter {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .centered-column {
+    width: 375px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 24px;
+    gap: 16px;
+    box-sizing: border-box;
+  }
+
+  .intro-card {
+    padding: 0;
+    align-items: center;
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--card-border-radius);
+    /* padding-left: 16px; */
+  }
+
+  .intro-card .intro-chapter {
+    max-width: 375px;
+    font-size: 16px;
+    /* padding-left: 16px; */
+  }
+
+  .intro-card:nth-child(2) .intro-chapter {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .intro-card:nth-child(3) .intro-chapter {
+    padding-left: 0;
+  }
+
+  .intro-card:nth-child(1) .player-container {
+    margin-left: 0;
+  }
+
+  .intro-card:nth-child(3) .player-container {
+    margin-right: 0;
+  }
+
+  .intro-card .lf-player-container,
+  .intro-card .player-container {
+    width: 120px;
+    height: 125px;
+  }
+
+  .intro-card:nth-child(1) .lf-player-container,
+  .intro-card:nth-child(1) .player-container {
+    height: 126px;
+  }
 }

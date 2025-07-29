@@ -1,3 +1,8 @@
+header {
+  background-color: var(--color-aubergine-animations);
+  padding: 24px 0;
+}
+
 header .centered-column {
   display: flex;
   align-items: center;
@@ -15,7 +20,7 @@ header .centered-column {
 }
 
 #lets-chat-bubble {
-  background: url("assets/images/baloon-for-text.svg");
+  background: url("../../../assets/images/baloon-for-text.svg");
   background-repeat: no-repeat;
   width: 260px;
   height: 60px;
@@ -31,4 +36,59 @@ header .centered-column {
 
 #lets-chat-bubble p.mobile {
   display: none;
+}
+
+@media only screen and (max-width: 1280px) {
+  header .centered-column {
+    padding: 0;
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  #logo {
+    height: 50px;
+  }
+
+  header {
+    padding: 16px;
+  }
+
+  header .centered-column {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    min-width: 330px;
+  }
+
+  #userpic {
+    height: 60px;
+  }
+
+  #lets-have-chat-button {
+    padding: 0;
+    flex-direction: row-reverse;
+    gap: 4px;
+  }
+
+  #lets-chat-bubble {
+    font-size: 16px;
+    padding: 0;
+    width: 130px;
+
+    background-size: 100% 60px;
+    transform: scaleX(-1);
+  }
+
+  #lets-chat-bubble p.desktop {
+    display: none;
+  }
+
+  #lets-chat-bubble p.mobile {
+    margin-left: 8px;
+    margin-top: 18px;
+    display: block;
+    transform: scaleX(-1);
+    font-size: 14px;
+  }
 }

@@ -5,7 +5,7 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("./assets/fonts/open-sans-v43-latin-regular.woff2") format("woff2");
+  src: url("../../assets/fonts/open-sans-v43-latin-regular.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -16,7 +16,7 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 500;
-  src: url("./assets/fonts/open-sans-v43-latin-500.woff2") format("woff2");
+  src: url("../../assets/fonts/open-sans-v43-latin-500.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -27,14 +27,14 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
-  src: url("./assets/fonts/open-sans-v43-latin-600.woff2") format("woff2");
+  src: url("../../assets/fonts/open-sans-v43-latin-600.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  --color-white: #ffffff;
+  --color-white: #f5f1ed;
   --color-red-coral: #ce7172;
   --color-sand-animation: #f1ddb0;
   --color-gold-texture: #fdbd59;
@@ -63,21 +63,10 @@ button {
   inset: 0;
 }
 
-/* section-start: header */
-
 .centered-column {
   width: 1280px;
   margin: 0 auto;
   box-sizing: border-box;
-}
-
-header {
-  background-color: var(--color-aubergine-animations);
-  padding: 24px 0;
-}
-
-header .centered-column {
-  padding: 0 8px;
 }
 
 .row {
@@ -91,118 +80,10 @@ header .centered-column {
   align-items: flex-start;
 }
 
-
-
-
-/* section-end: header */
-/* ===================================================== */
-
-/* ===================================================== */
-/* section-start: intro */
-
-.cards {
-  padding: 8px;
-  align-items: stretch;
-  gap: 32px;
-  box-sizing: border-box;
-}
-
-.intro-card {
-  flex-basis: 33%;
-  display: flex;
-  flex-direction: column;
-  /* background-color: var(--card-background); */
-  align-items: center;
-  border-radius: var(--card-border-radius);
-  padding: 16px;
-}
-
-.intro-card:nth-child(1) {
-  padding-left: 0;
-}
-
-.intro-card:nth-child(3) {
-  padding-right: 0;
-}
-
-.intro-card .player-container {
-  width: 233px;
-  height: 233px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.intro-card .lf-player-container,
-.intro-card:nth-child(2) .lf-player-container {
-  width: 233px;
-  height: 233px;
-}
-
-.intro-card:nth-child(2) .lf-player-container {
-  width: 210px;
-  height: 170px;
-}
-
-.intro-chapter {
-  font-family: "Open Sans";
-  font-weight: 500;
-  z-index: 1;
-  padding: 0;
-  font-size: 22px;
-}
-
-
-.intro-card:nth-child(2) .intro-chapter {
-  padding-left: 24px;
-}
-
-
-
-/* section-end: intro */
-/* ===================================================== */
-
 @media only screen and (max-width: 1280px) {
-  section#eirini-intro {
-    padding: 24px 0 64px 0;
-  }
-
   .centered-column {
     width: 800px;
     box-sizing: border-box;
-  }
-
-
-  header .centered-column {
-    padding: 0 8px;
-
-  }
-
-  .intro-card {
-    padding: 0;
-  }
-
-  .intro-card .lf-player-container {
-    width: 180px;
-    height: 190px;
-  }
-
-  .player-container {
-    width: 233px;
-    height: 182px;
-  }
-
-  .intro-card:nth-child(2) .lf-player-container {
-    width: 150px;
-    height: 120px;
-  }
-
-  .intro-chapter {
-    font-size: 17px;
-  }
-
-  .intro-card:nth-child(2) .intro-chapter {
-    padding-left: 16px;
   }
 }
 
@@ -210,14 +91,6 @@ header .centered-column {
   .centered-column {
     width: 375px;
   }
-
-  .cards {
-    flex-direction: column;
-    align-items: center;
-    padding: 0 24px;
-  }
-
-
 
   .intro-card {
     padding: 0;
@@ -254,67 +127,5 @@ header .centered-column {
 
   .intro-card-0 .player-container {
     margin-top: -8px;
-  }
-
-  .cards {
-    gap: 0px;
-  }
-
-  #logo {
-    height: 50px;
-  }
-
-  #userpic {
-    height: 60px;
-  }
-
-  header {
-    padding: 16px;
-    box-sizing: border-box;
-  }
-
-  header .centered-column {
-    width: 100%;
-    height: auto;
-    box-sizing: border-box;
-    min-width: 330px;
-  }
-
-
-  #lets-have-chat-button {
-    padding: 0;
-    flex-direction: row-reverse;
-    gap: 4px;
-  }
-
-  #lets-chat-bubble {
-    font-size: 16px;
-    padding: 0;
-    width: 130px;
-
-    background-size: 100% 60px;
-    transform: scaleX(-1);
-  }
-
-  #lets-chat-bubble p.desktop {
-    display: none;
-  }
-
-  #lets-chat-bubble p.mobile {
-    margin-left: 8px;
-    margin-top: 18px;
-    display: block;
-    transform: scaleX(-1);
-    font-size: 14px;
-  }
-
-  #title-sticker {
-    top: -30px;
-    width: 240px;
-    height: 141px;
-  }
-
-  #title-sticker h2 {
-    font-size: 19px;
   }
 }
