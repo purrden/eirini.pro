@@ -8,8 +8,6 @@ export default function Chapter({ text }: ChapterProps) {
 
 
   return (
-
-    <Body className="intro-chapter" text={text} />
-
+    <Body className="intro-chapter">{text}</Body>
   );
 }

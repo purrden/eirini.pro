@@ -2,6 +2,67 @@
   flex-grow: 1;
 }
 
+
+.projects-list {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.project-title {
+  color: var(--color-aubergine-animations);
+}
+
+.project-card {
+  position: relative;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  flex-basis: 30%;
+  padding: 16px 0;
+  box-sizing: border-box;
+  text-decoration: none;
+
+}
+
+.project-card::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  bottom: 0;
+  left: 0;
+}
+
+.project-card:hover::after {
+  background-color: var(--color-aubergine-animations);
+  color: var(--color-white);
+  width: 100%;
+  transition: width 0.3s ease;
+}
+
+
+.player-container,
+.lf-player-container {
+  width: 80px;
+  height: 100%;
+  position: relative;
+}
+
+.project-card:nth-child(2) .player-container {
+  width: 110px;
+}
+
+.project-card:nth-child(2) .lf-player-container {
+  transform: translateX(14px) rotate(-23deg);
+  width: 55px;
+}
+
 #title-sticker {
   background-image: url(../../../assets/images/section-sticker-green.svg);
   background-size: contain;
@@ -33,8 +94,6 @@
   mask-size: contain;
   inset: 0;
   background-image: url(../../../assets/images/texture-green.svg);
-
-  /* opacity: 0.2; */
 }
 
 section#featured-projects {
@@ -62,18 +121,15 @@ section#featured-projects::before {
   }
 }
 
-
 @media screen and (max-width: 900px) {
   #title-sticker h2 {
     font-size: 25px;
     line-height: 45px;
   }
 
-
   #title-sticker {
     top: -30px;
     width: 240px;
-
   }
 
   #title-sticker h2 {
