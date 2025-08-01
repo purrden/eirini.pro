@@ -1,5 +1,25 @@
 .body-text {
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 400;
+  font-size: var(--body-text-font-size);
+  line-height: var(--body-text-line-height);
+  font-weight: var(--body-text-font-weight);
+}
+
+.primary-heading-text {
+  font-size: var(--primary-heading-font-size);
+  line-height: var(--primary-heading-line-height);
+  font-weight: var(--primary-heading-font-weight);
+}
+
+@media only screen and (max-width: 1280px) {
+  .body-text {
+    font-size: var(--body-text-font-size-1280);
+    line-height: var(--body-text-line-height-1280);
+    font-weight: var(--body-text-font-weight-1280);
+  }
+
+  .primary-heading-text {
+    font-size: var(--primary-heading-font-size-1280);
+    line-height: var(--primary-heading-line-height-1280);
+    font-weight: var(--primary-heading-font-weight-1280);
+  }
 }

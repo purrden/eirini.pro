@@ -27,12 +27,17 @@ section#eirini-intro::after {
   flex-direction: column;
   align-items: center;
   border-radius: var(--card-border-radius);
-  padding: 16px;
+  padding: 21px 21px 41px 21px;
 }
 
 
 .intro-card:nth-child(1) {
   padding-left: 0;
+}
+
+.intro-card:nth-child(2) .player-container {
+  margin-top: 28px;
+  margin-bottom: -28px;
 }
 
 .intro-card:nth-child(3) {
@@ -68,7 +73,7 @@ section#eirini-intro::after {
 
 
 .intro-card:nth-child(2) .intro-chapter {
-  padding-left: 24px;
+  padding-left: 36px;
   padding-right: 16px;
 }
 

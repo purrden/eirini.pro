@@ -5,23 +5,20 @@ import DancingCircles from "../../../assets/lottie/dancing_circles.json";
 import Stones from "../../../assets/lottie/stones.json";
 import Zigzags from "../../../assets/lottie/zigzags.json";
 import { Player } from "@lottiefiles/react-lottie-player";
-import { Body } from "@/shared/components/typography";
+import { Body, PrimaryHeading } from "@/shared/components/typography";
+import content from "@/content/main";
 
-
-const projects = [
-  { title: "Climate Ready South East Scotland Project", animation: Stones },
-  { title: "Climate Adaptation Workshop Facilitation", animation: BeamingSticks },
-  { title: "Producing & Delivering ECCAN News & Podcast", animation: Zigzags },
-  { title: "Eirini’s Blogosphere", animation: DancingCircles },
-  { title: "Circular Economy in Edinburgh  Report 2022", animation: CornerSticks },
-]
-
+const animations = [Stones, BeamingSticks, Zigzags, DancingCircles, CornerSticks];
+const projects = content.page.projects.list.map((title, index) => ({
+  title,
+  animation: animations[index % animations.length],
+}));
 
 
 export default function FeaturedProjects() {
   return <section id="featured-projects">
     <div id="title-sticker">
-      <h2>Featured Projects</h2>
+      <PrimaryHeading>Featured Projects</PrimaryHeading>
     </div>
     <div className="centered-column projects-list">
       {projects.map((project, index) => (
@@ -33,6 +30,5 @@ export default function FeaturedProjects() {
         </a>
       ))}
     </div>
-
   </section >
 }

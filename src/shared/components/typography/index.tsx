@@ -10,6 +10,6 @@ export function Body({ children, className }: BodyProps) {
   return <p className={`body-text ${className ?? ""}`}>{children}</p>;
 }
 
-export function PrimaryHeading(t: string) {
-  return <p className="primary-heading-text">{t}</p>;
+export function PrimaryHeading({ children, className }: BodyProps) {
+  return <p className={`primary-heading-text ${className ?? ""}`}>{children ?? null}</p>;
 }

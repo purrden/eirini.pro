@@ -2,7 +2,6 @@
   flex-grow: 1;
 }
 
-
 .projects-list {
   display: flex;
   align-items: center;
@@ -13,21 +12,25 @@
 }
 
 .project-title {
+  line-height: 32px;
   color: var(--color-aubergine-animations);
+  position: absolute;
+  width: 265px;
+  left: 110px;
 }
 
 .project-card {
   position: relative;
   display: flex;
-  gap: 32px;
+  gap: 24px;
   align-items: center;
   width: 100%;
   max-width: 400px;
+  height: 130px;
   flex-basis: 30%;
-  padding: 16px 0;
+  padding: 16px 0 0;
   box-sizing: border-box;
   text-decoration: none;
-
 }
 
 .project-card::after {
@@ -46,12 +49,24 @@
   transition: width 0.3s ease;
 }
 
+.project-card:hover .project-title {
+  font-size: 23px;
+}
+
+.project-card .project-title {
+  font-weight: 500;
+  color: var(--color-aubergine-animations);
+  transition: font-size 0.3s ease;
+  width: 265px;
+}
+
 
 .player-container,
 .lf-player-container {
   width: 80px;
   height: 100%;
   position: relative;
+  display: flex;
 }
 
 .project-card:nth-child(2) .player-container {
@@ -76,7 +91,7 @@
   text-align: center;
 }
 
-#title-sticker h2 {
+#title-sticker p {
   position: absolute;
   left: 50%;
   width: 100%;
@@ -94,6 +109,7 @@
   mask-size: contain;
   inset: 0;
   background-image: url(../../../assets/images/texture-green.svg);
+  opacity: 1;
 }
 
 section#featured-projects {
@@ -119,6 +135,16 @@ section#featured-projects::before {
     font-size: 25px;
     line-height: 45px;
   }
+
+  .projects-list {
+    padding-top: 20px;
+    gap: 0 64px;
+  }
+
+  .project-card {
+    flex-basis: 46%;
+  }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -135,5 +161,24 @@ section#featured-projects::before {
   #title-sticker h2 {
     font-size: 19px;
     line-height: 30px;
+  }
+
+  .projects-list {
+    padding: 0 24px;
+    display: block;
+  }
+
+  .player-container,
+  .project-title {
+    margin-left: -24px;
+  }
+
+  .project-card {
+    padding: 0;
+    height: 120px;
+  }
+
+  .project-card:hover::after {
+    width: 0;
   }
 }

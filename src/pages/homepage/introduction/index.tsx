@@ -3,7 +3,7 @@ import RecyclingSign from "../../../assets/lottie/recycling_sign.json";
 import PeoplePlantingTogether from "../../../assets/lottie/people_planting_together.json";
 import Chapter from "./Chapter";
 import { Player } from "@lottiefiles/react-lottie-player";
-import Content from "../../../content/main.json";
+import Content from "../../../content/main";
 import "./Introduction.css";
 
 
@@ -22,7 +22,7 @@ export default function Introduction() {
             <div className="player-container">
               <Player autoplay loop src={animation} />
             </div>
-            <Chapter text={Content.page.section.intro[index]} />
+            <Chapter text={Content.page.intro[index]} />
           </div>
         ))}
       </div>
