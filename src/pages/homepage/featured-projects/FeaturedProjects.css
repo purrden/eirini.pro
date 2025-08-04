@@ -1,7 +1,3 @@
-#featured-projects {
-  flex-grow: 1;
-}
-
 .projects-list {
   display: flex;
   align-items: center;
@@ -131,7 +127,7 @@ section#featured-projects::before {
     width: 340px;
   }
 
-  #title-sticker h2 {
+  #title-sticker p {
     font-size: 25px;
     line-height: 45px;
   }
@@ -148,7 +144,11 @@ section#featured-projects::before {
 }
 
 @media screen and (max-width: 900px) {
-  #title-sticker h2 {
+  section#featured-projects {
+    padding: 48px 0 32px 0;
+  }
+
+  #title-sticker p {
     font-size: 25px;
     line-height: 45px;
   }
@@ -158,7 +158,7 @@ section#featured-projects::before {
     width: 240px;
   }
 
-  #title-sticker h2 {
+  #title-sticker p {
     font-size: 19px;
     line-height: 30px;
   }
@@ -171,11 +171,22 @@ section#featured-projects::before {
   .player-container,
   .project-title {
     margin-left: -24px;
+    font-size: 18px;
+  }
+
+  .project-card .project-title {
+    width: 215px;
+    font-size: 18px;
+
   }
 
   .project-card {
     padding: 0;
     height: 120px;
+  }
+
+  .project-card:hover .project-title {
+    font-size: 19px;
   }
 
   .project-card:hover::after {

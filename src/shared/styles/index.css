@@ -78,12 +78,10 @@ button {
 }
 
 #root {
-  min-height: 100vh;
   padding-top: 139px;
 }
 
 main {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -113,6 +111,10 @@ main {
 }
 
 @media only screen and (max-width: 900px) {
+  #root {
+    padding-top: 60px;
+  }
+
   .centered-column {
     width: 375px;
   }

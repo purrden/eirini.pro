@@ -73,7 +73,7 @@ section#eirini-intro::after {
 
 
 .intro-card:nth-child(2) .intro-chapter {
-  padding-left: 36px;
+  padding-left: 24px;
   padding-right: 16px;
 }
 
@@ -154,6 +154,7 @@ section#eirini-intro::after {
   .intro-card:nth-child(2) .intro-chapter {
     padding-left: 0px;
     padding-right: 0px;
+    padding-top: 24px;
   }
 
   .intro-card:nth-child(3) .intro-chapter {
@@ -161,7 +162,7 @@ section#eirini-intro::after {
   }
 
   .intro-card:nth-child(1) .player-container {
-    margin-left: 0;
+    padding-left: 0;
   }
 
   .intro-card:nth-child(3) .player-container {
