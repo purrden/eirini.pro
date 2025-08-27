@@ -19,12 +19,12 @@ const content = {
       projects: {
         title: "Featured Projects",
         list: [
-        "Climate Ready South East Scotland Project",
-        "Climate Adaptation Workshop Facilitation",
-        "Producing & Delivering ECCAN News & Podcast",
-        "Eirini’s Blogosphere",
-        "Circular Economy in Edinburgh  Report 2022"
-      ]
+          {title: "Climate Ready South East Scotland Project", href:"#"},
+          {title: "Climate Adaptation Workshop Facilitation", href:"#"},
+          {title: "Producing & Delivering ECCAN News & Podcast", href:"#"},
+          {title: "Eirini’s Blogosphere", href:"/projects"},
+          {title: "Circular Economy in Edinburgh  Report 2022", href:"#"},
+        ]
       }
 
   }

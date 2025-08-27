@@ -145,7 +145,7 @@ section#featured-projects::before {
 
 @media screen and (max-width: 900px) {
   section#featured-projects {
-    padding: 48px 0 32px 0;
+    padding: 48px 0;
   }
 
   #title-sticker p {

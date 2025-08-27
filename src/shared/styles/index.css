@@ -61,6 +61,10 @@ body {
   --primary-heading-line-height-1280: 1.2;
   --primary-heading-font-weight-1280: 500;
 
+  --z-index-project-card: 100;
+  --z-index-sticker: 200;
+  --z-index-header: 300;
+
   padding: 0;
   box-sizing: border-box;
   color: var(--color-white);

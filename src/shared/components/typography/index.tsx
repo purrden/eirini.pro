@@ -13,3 +13,7 @@ export function Body({ children, className }: BodyProps) {
 export function PrimaryHeading({ children, className }: BodyProps) {
   return <p className={`primary-heading-text ${className ?? ""}`}>{children ?? null}</p>;
 }
+
+export function SecondaryHeading({ children, className }: BodyProps) {
+  return <p className={`secondary-heading-text ${className ?? ""}`}>{children ?? null}</p>;
+}

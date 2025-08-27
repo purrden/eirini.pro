@@ -1,0 +1,47 @@
+#projects-list {
+  display: flex;
+  position: relative;
+  background-color: var(--color-gold-texture);
+  padding: 48px 0 96px 0;
+  color: var(--color-aubergine-animations);
+}
+
+#projects-list::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(../../../assets/images/texture-sand.svg);
+}
+
+.thumbnail {
+  width: 100%;
+  /* height: 248px; */
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  --spacing: 24px;
+  --negative-spacing: -24px;
+  margin: 0 var(--negative-spacing) 0 var(--negative-spacing);
+}
+
+.project-card {
+  z-index: var(--z-index-project-card);
+  cursor: pointer;
+  padding: var(--spacing);
+
+}
+
+.project-subtitle {
+  max-width: 30ch;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+.project-card:hover {
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: transform 0.3s ease, background-color 0.5s ease;
+}

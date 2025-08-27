@@ -1,10 +1,10 @@
 header {
   position: fixed;
   inset: 0;
-  z-index: 100;
+  z-index: var(--z-index-header);
   bottom: auto;
   background-color: var(--color-aubergine-animations);
-  padding: 24px 0;
+  padding: 32px 0;
 }
 
 header .centered-column {
@@ -26,6 +26,7 @@ header .centered-column {
 #lets-chat-bubble {
   background: url("../../../assets/images/baloon-for-text.svg");
   background-repeat: no-repeat;
+  background-size: 260px 60px;
   width: 260px;
   height: 60px;
   text-transform: uppercase;

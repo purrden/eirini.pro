@@ -10,6 +10,12 @@
   font-weight: var(--primary-heading-font-weight);
 }
 
+.secondary-heading-text {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
 @media only screen and (max-width: 1280px) {
   .body-text {
     font-size: var(--body-text-font-size-1280);
