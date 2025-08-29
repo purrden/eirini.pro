@@ -73,7 +73,7 @@ header .centered-column {
   #lets-have-chat-button {
     padding: 0;
     flex-direction: row-reverse;
-    gap: 4px;
+    gap: 8px;
   }
 
   #lets-chat-bubble {
@@ -81,7 +81,7 @@ header .centered-column {
     padding: 0;
     width: 130px;
 
-    background-size: 100% 60px;
+    background-size: 100% 56px;
     transform: scaleX(-1);
   }
 

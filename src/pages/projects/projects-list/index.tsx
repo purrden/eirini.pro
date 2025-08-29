@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./ProjectsList.css";
 import { Body, SecondaryHeading } from "@/shared/components/typography";
 import debug from "@/assets/snippets/debug";
+import { historyBackWFallback } from "@/assets/snippets/navigation";
 
 type ErrorKind = "fetch" | "parse" | "unknown";
 
@@ -116,7 +117,6 @@ function useProjects(): [Project[], PostsError | null] {
   return [projects, error];
 }
 
-
 export default function ProjectsList() {
   const [projects, error] = useProjects();
 
@@ -131,12 +131,12 @@ export default function ProjectsList() {
   return (
     <section id="projects-list">
       <div className="centered-column">
-        <a href="/index.html" className="back-link">Back</a>
+        <button onClick={historyBackWFallback} className="back-button">Back</button>
         <div className="projects-grid">
           {projects.map(project => (
             <div key={project.id} className="project-card">
               <img className="thumbnail" src={project.thumbnail} alt={project.title} />
-              <SecondaryHeading>{project.title}</SecondaryHeading>
+              <SecondaryHeading className="project-title">{project.title}</SecondaryHeading>
               <p className="project-subtitle">{project.subtitle}</p>
             </div>
           ))}

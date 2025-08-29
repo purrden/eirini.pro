@@ -2,7 +2,7 @@
   display: flex;
   position: relative;
   background-color: var(--color-gold-texture);
-  padding: 48px 0 96px 0;
+  padding: 48px 16px 96px 16px;
   color: var(--color-aubergine-animations);
 }
 
@@ -15,7 +15,8 @@
 
 .thumbnail {
   width: 100%;
-  /* height: 248px; */
+  height: 248px;
+  object-fit: cover
 }
 
 .projects-grid {
@@ -33,15 +34,70 @@
 
 }
 
+.project-title {
+  font-size: 30px;
+  line-height: 120%;
+  margin: 16px 0 8px 0;
+}
+
 .project-subtitle {
-  max-width: 30ch;
-  text-overflow: ellipsis;
   overflow: hidden;
   backface-visibility: hidden;
 }
 
 .project-card:hover {
   border-radius: 16px;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.25);
   transition: transform 0.3s ease, background-color 0.5s ease;
+}
+
+.back-button {
+  position: relative;
+  background: none;
+  text-decoration: underline;
+  padding: 32px 32px 24px 32px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.back-button::before {
+  position: absolute;
+  left: 16px;
+  content: "< ";
+  font-weight: 400;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1280px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .thumbnail {
+    width: 100%;
+    height: 220px;
+    object-fit: cover
+  }
+
+  .projects-grid {
+    gap: 16px;
+    margin: 0;
+  }
+
+  .project-card {
+    padding: 16px 16px 0 16px;
+    height: auto;
+  }
+
+  .project-title {
+    font-size: 24px;
+    line-height: 120%;
+    margin: 16px 0 8px 0;
+  }
 }
