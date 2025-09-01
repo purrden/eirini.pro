@@ -44,6 +44,7 @@ function useProjects(): [Project[], PostsError | null] {
           url: URL.PROJECTS,
           error: e,
         });
+        setError(new PostsError("fetch", "Failed to fetch projects list"));
         return [];
       })).posts || [];
 

@@ -1,9 +1,3 @@
-const DATA_FETCH = {
-  NETWORK_ERROR: "Network error occurred while fetching data",
-  PARSE_ERROR: "Error parsing fetched data",
-  UNKNOWN_ERROR: "An unknown error occurred",
-}
-
 type DebugKind = "data_fetch"
 type Outcome = "success" | "failure"
 

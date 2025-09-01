@@ -1,6 +1,6 @@
 import "@shared/styles/index.css";
 import "./Footer.css";
-import { Body, PrimaryHeading } from "../typography";
+import { PrimaryHeading } from "../typography";
 import content from "@/content/main";
 import EmailIcon from "@assets/icons/email.svg";
 import LinkedInIcon from "@assets/icons/linkedin.svg";
