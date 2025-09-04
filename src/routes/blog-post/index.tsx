@@ -1,4 +1,4 @@
-import "./Homepage.css";
+import "./BlogPost.css";
 
 import Header from "@shared/components/header";
 
