@@ -10,7 +10,7 @@ export default function Header() {
   return <header>
     <div className="centered-column">
       <div className="row">
-        <button onClick={() => location.route("/")}>
+        <button id="logo-button" onClick={() => location.route("/")}>
           <img id="logo" src={Logo} />
         </button>
         <a id="lets-have-chat-button" href="mailto:a@a.com">

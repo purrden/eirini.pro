@@ -40,7 +40,7 @@ export default function FeaturedProjects() {
           <div className="player-container">
             <Player autoplay loop src={project.animation} />
           </div>
-          <Body className="project-title"> {project.title} </Body>
+          <Body className="featured-project-title"> {project.title} </Body>
         </button>
       ))}
     </div>

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./ProjectsList.css";
 import { Body, SecondaryHeading } from "@/shared/components/typography";
 import debug from "@/assets/snippets/debug";
-import { historyBackWFallback } from "@/assets/snippets/navigation";
+import { goBack } from "@/assets/snippets/navigation";
 
 type ErrorKind = "fetch" | "parse" | "unknown";
 
@@ -126,13 +126,13 @@ export default function ProjectsList() {
   }
 
   if (projects.length === 0) {
+    // todo: this should not be the case while loading. remake
     return <Body>No projects found.</Body>;
   }
 
   return (
     <section id="projects-list">
       <div className="centered-column">
-        <button onClick={historyBackWFallback} className="back-button">Back</button>
         <div className="projects-grid">
           {projects.map(project => (
             <div key={project.id} className="project-card">

@@ -1,0 +1,12 @@
+#projects-page {
+  position: relative;
+  background-color: var(--color-gold-texture);
+  color: var(--color-aubergine-animations);
+}
+
+#projects-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(../../assets/images/texture-sand.svg);
+}

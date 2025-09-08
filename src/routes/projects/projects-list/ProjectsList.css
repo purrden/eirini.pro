@@ -1,16 +1,6 @@
 #projects-list {
   display: flex;
-  position: relative;
-  background-color: var(--color-gold-texture);
-  padding: 48px 16px 96px 16px;
-  color: var(--color-aubergine-animations);
-}
-
-#projects-list::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url(../../../assets/images/texture-sand.svg);
+  padding: 0px 16px 96px 16px;
 }
 
 .thumbnail {
@@ -51,22 +41,6 @@
   transition: transform 0.3s ease, background-color 0.5s ease;
 }
 
-.back-button {
-  position: relative;
-  background: none;
-  text-decoration: underline;
-  padding: 32px 32px 24px 32px;
-  font-weight: 400;
-  cursor: pointer;
-}
-
-.back-button::before {
-  position: absolute;
-  left: 16px;
-  content: "< ";
-  font-weight: 400;
-  text-decoration: none;
-}
 
 @media only screen and (max-width: 1280px) {
   .projects-grid {

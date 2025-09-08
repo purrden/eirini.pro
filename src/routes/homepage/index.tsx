@@ -8,12 +8,8 @@ import Footer from "@/shared/components/footer";
 function Homepage() {
   return (
     <>
-      <Header />
-      <main>
-        <Introduction />
-        <FeaturedProjects />
-      </main>
-      <Footer />
+      <Introduction />
+      <FeaturedProjects />
     </>
   );
 }

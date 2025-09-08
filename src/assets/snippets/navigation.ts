@@ -1,4 +1,4 @@
-export function historyBackWFallback() {
+export function goBack() {
     const fallbackUrl = '/';
     var prevPage = window.location.href;
 
