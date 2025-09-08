@@ -12,14 +12,23 @@ header .centered-column {
   align-items: center;
 }
 
+#logo-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
 #logo {
   height: 80px;
+  padding: 0;
 }
 
 #lets-have-chat-button {
   padding: 0;
   display: flex;
   align-items: center;
+  text-decoration: none;
   gap: 8px;
 }
 
@@ -27,16 +36,17 @@ header .centered-column {
   background: url("../../../assets/images/baloon-for-text.svg");
   background-repeat: no-repeat;
   background-size: 260px 60px;
-  width: 260px;
+  width: 249px;
   height: 60px;
   text-transform: uppercase;
+  text-align: center;
   color: var(--color-aubergine-animations);
 }
 
 #lets-chat-bubble p.desktop {
   display: block;
   padding-left: 24px;
-  margin-top: 16px;
+  margin-top: 19px;
 }
 
 #lets-chat-bubble p.mobile {

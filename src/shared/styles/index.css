@@ -83,11 +83,15 @@ button {
 
 #root {
   padding-top: 139px;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
   display: flex;
   flex-direction: column;
+  min-height: 600px;
+  flex: 1;
 }
 
 .centered-column {

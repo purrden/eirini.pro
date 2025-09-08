@@ -27,7 +27,7 @@
   margin: 0 var(--negative-spacing) 0 var(--negative-spacing);
 }
 
-.project-card {
+.projects-grid .project-card {
   z-index: var(--z-index-project-card);
   cursor: pointer;
   padding: var(--spacing);
@@ -45,7 +45,7 @@
   backface-visibility: hidden;
 }
 
-.project-card:hover {
+.projects-grid .project-card:hover {
   border-radius: 16px;
   background-color: rgba(255, 255, 255, 0.25);
   transition: transform 0.3s ease, background-color 0.5s ease;
@@ -90,7 +90,7 @@
     margin: 0;
   }
 
-  .project-card {
+  .projects-grid .project-card {
     padding: 16px 16px 0 16px;
     height: auto;
   }
