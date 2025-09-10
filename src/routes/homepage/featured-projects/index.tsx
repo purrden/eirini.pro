@@ -21,7 +21,9 @@ const projects = content.page.projects.list.map((project, index) => ({
 
 export default function FeaturedProjects() {
   const location = useLocation();
-  const onCardClick = (path: string) => {
+  const onCardClick = (path: string) => (e: Event) => {
+    e.preventDefault();
+    console.log("Routing to:", path);
     location.route(path);
   }
 
@@ -34,8 +36,7 @@ export default function FeaturedProjects() {
         <button
           className="featured-project-card"
           key={`project-card-${index}`}
-          onClick={() => location.route(project.path)}
-
+          onClick={onCardClick(project.path)}
         >
           <div className="player-container">
             <Player autoplay loop src={project.animation} />

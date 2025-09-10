@@ -141,7 +141,6 @@ section#featured-projects::before {
   .featured-project-card {
     flex-basis: 46%;
   }
-
 }
 
 @media screen and (max-width: 900px) {

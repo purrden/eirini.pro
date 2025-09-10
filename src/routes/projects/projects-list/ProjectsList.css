@@ -21,6 +21,7 @@
   z-index: var(--z-index-project-card);
   cursor: pointer;
   padding: var(--spacing);
+  text-align: left;
 
 }
 

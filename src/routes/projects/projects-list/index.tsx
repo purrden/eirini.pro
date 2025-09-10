@@ -23,6 +23,7 @@ class PostsError extends Error {
 type ProjectId = string;
 type Project = {
   id: ProjectId;
+  pathName: string;
   title: string;
   subtitle?: string;
   content: string;
@@ -121,6 +122,12 @@ function useProjects(): [Project[], PostsError | null] {
 export default function ProjectsList() {
   const [projects, error] = useProjects();
 
+  const onCardClick = (path: string) => (e: Event) => {
+    e.preventDefault();
+    console.log("Routing to:", path);
+    window.location
+  }
+
   if (error) {
     return <Body>{error.message}</Body>;
   }
@@ -135,11 +142,11 @@ export default function ProjectsList() {
       <div className="centered-column">
         <div className="projects-grid">
           {projects.map(project => (
-            <div key={project.id} className="project-card">
+            <button key={project.id} className="project-card" onClick={onCardClick(`/projects/${project.path}`)}>
               <img className="thumbnail" src={project.thumbnail} alt={project.title} />
               <SecondaryHeading className="project-title">{project.title}</SecondaryHeading>
               <p className="project-subtitle">{project.subtitle}</p>
-            </div>
+            </button>
           ))}
         </div>
       </div>

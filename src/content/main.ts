@@ -12,7 +12,7 @@ const content = {
   },
   page: {
       intro: [
-        "Communities Climate Coordinator for ECCAN. Supporting communities and individuals with taking climate action in Edinburgh.",
+        "Supporting communities and individuals with taking climate action in Edinburgh.",
         "Circular Economy Specialist and advocate of reuse with a MSc in Environmental Sustainability.",
         "Working with companies and NGOs in different areas of the world to support climate action."
       ],
