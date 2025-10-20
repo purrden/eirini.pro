@@ -12,11 +12,15 @@ const BlogPost = lazy(() => import('./routes/blog-post'));
 
 
 function Layout({ children, hasBackButton }: { children: preact.ComponentChildren, hasBackButton?: boolean }) {
+  if (hasBackButton) {
+    console.log('Back button is enabled');
+  }
   const location = useLocation();
   console.log('Current location:', location);
 
   return <>
     <Header />
+    <BackButton />
     <main>
       {children}
     </main>

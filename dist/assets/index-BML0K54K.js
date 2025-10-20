@@ -1,0 +1,1 @@
+import{b as n,u as o}from"./index-D5_cQq2M.js";function l(){const t=n();return console.log("Current location BLOG:",t),o("div",{className:"centered-column blog-post-container",children:[o("h1",{children:"Blog Post Title"}),o("p",{children:"This is a sample blog post content."})]})}export{l as default};

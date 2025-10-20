@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import "./ProjectsList.css";
 import { Body, SecondaryHeading } from "@/shared/components/typography";
 import debug from "@/assets/snippets/debug";
-import { goBack } from "@/assets/snippets/navigation";
 
 type ErrorKind = "fetch" | "parse" | "unknown";
 
@@ -142,7 +141,7 @@ export default function ProjectsList() {
       <div className="centered-column">
         <div className="projects-grid">
           {projects.map(project => (
-            <button key={project.id} className="project-card" onClick={onCardClick(`/projects/${project.path}`)}>
+            <button key={project.id} className="project-card" onClick={onCardClick(`/projects/${project.pathName}`)}>
               <img className="thumbnail" src={project.thumbnail} alt={project.title} />
               <SecondaryHeading className="project-title">{project.title}</SecondaryHeading>
               <p className="project-subtitle">{project.subtitle}</p>
