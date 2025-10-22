@@ -3,7 +3,10 @@
   "path": "sustainability-at-festival",
   "title": "Sustainability Ideas at a Festival",
   "subtitle": "Festival can give you more than just music and fun.",
-  "thumbnail": "./planting1.jpg",
+  "thumbnail": "/posts/2025-01-02/festival_waste1.png",
+  "images": [
+    "/posts/2025-01-02/festival_waste1.png"
+  ],
   "content": {
     "time": 1761167537671,
     "blocks": [

@@ -1,12 +1,11 @@
 {
   "id": "2025-01-03",
-  "path": "test-path-3",
-  "title": "New Year, New Beginnings",
-  "subtitle": "Embracing 2025 with Open Arms",
-  "thumbnail": "/planting.jpg",
+  "path": "read-wasteland-book",
+  "title": "I read Wasteland by Oliver Franklin-Wallis",
+  "subtitle": "(and why you should read it too)",
+  "thumbnail": "/posts/2025-01-03/book.png",
   "images": [
-    "https://example.com/image1.jpg",
-    "https://example.com/image2.jpg"
+    "/posts/2025-01-03/book.png"
   ],
   "content": {
     "time": 1761169194717,

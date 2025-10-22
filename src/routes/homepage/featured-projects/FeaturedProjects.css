@@ -185,7 +185,7 @@ section#featured-projects::before {
     height: 120px;
   }
 
-  .featured-project-card:hover .project-title {
+  .featured-project-card:hover .featured-project-title {
     font-size: 19px;
   }
 
