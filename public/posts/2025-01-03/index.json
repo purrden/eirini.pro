@@ -5,8 +5,150 @@
   "subtitle": "Embracing 2025 with Open Arms",
   "thumbnail": "/planting.jpg",
   "images": [
-      "https://example.com/image1.jpg",
-      "https://example.com/image2.jpg"
+    "https://example.com/image1.jpg",
+    "https://example.com/image2.jpg"
   ],
-  "content": "Welcome to the first post of 2025! This year, we are excited to share new.\nYO ur journey with us as we explore new ideas, projects, and inspirations. Stay tuned for more updates and insights throughout the year.\n\nHappy New Year!\n\n- The Team \n This is a Lorem Ipsum placeholder text to fill the content area. It is used to demonstrate how the text will look in the final layout. The actual content will be added later as we finalize our posts and articles for this year."
+  "content": {
+    "time": 1761169194717,
+    "blocks": [
+      {
+        "id": "yxbdxID5DA",
+        "type": "header",
+        "data": {
+          "text": "I read Wasteland by Oliver Franklin-Wallis (and why you should read it too)",
+          "level": 2,
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "29YEaUzbav",
+        "type": "paragraph",
+        "data": {
+          "text": "What kind of book were you reading over the weekend 👀 ?”",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "S6MQdvBqGh",
+        "type": "paragraph",
+        "data": {
+          "text": "“A horror one 😱 “",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "cYXBwOfQmQ",
+        "type": "paragraph",
+        "data": {
+          "text": "“Oh…what was it about?”&nbsp;",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "ipMMne3S2m",
+        "type": "paragraph",
+        "data": {
+          "text": "“The main protagonist travels worldwide 🌍 , harming people and nature right, left and centre. And very few things happen to make it stop.”&nbsp;",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "gh0tNsCOao",
+        "type": "paragraph",
+        "data": {
+          "text": "“Oh..does it have a happy ending?”",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "9RMFT7HAQO",
+        "type": "paragraph",
+        "data": {
+          "text": "“I won't spoil it for you.\"&nbsp;",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "tRIv_72Y69",
+        "type": "paragraph",
+        "data": {
+          "text": "I’m probably a bit late to the party, but for anyone who hasn’t read Wasteland yet, I can’t recommend it enough.&nbsp;",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "rtaaQdmH0f",
+        "type": "paragraph",
+        "data": {
+          "text": "From where your waste goes (probably travelling further than you do in a year 🚢) to who is involved in getting it to its final destination, it’s a fascinating read.&nbsp;",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "GZbbxHee3Q",
+        "type": "paragraph",
+        "data": {
+          "text": "As promised, no spoilers, but here are some notes 📝 :&nbsp;",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "ZDVH5EPWMG",
+        "type": "paragraph",
+        "data": {
+          "text": "- In the UK, waste crimes are SO commonplace that in 2021 the environment agency and the police established a dedicated Joint Unit for Waste Crime (JUWC)",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "X6O5anee4j",
+        "type": "paragraph",
+        "data": {
+          "text": "- Waste tends to be a problem for the next person. As in “I’ll move it from point A (being my location) ➡️ point B 📌 (somewhere where it is anyone’s problem but mine).&nbsp;",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "hj5gmtJOMD",
+        "type": "paragraph",
+        "data": {
+          "text": "- If a product says it’s not flushable (or by using common sense, you know it’s not flushable), don’t flush it. There’s a whole chapter on the sewage system that while riveting, is also shocking.&nbsp;",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "p4zT77bMEd",
+        "type": "paragraph",
+        "data": {
+          "text": "- “Biodegradable” products aren’t always all they claim to be. Do your homework. Maybe even google 💻 “The Big Compost” experiment.&nbsp;",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "85su6YjsFG",
+        "type": "paragraph",
+        "data": {
+          "text": "- If you’re googling the above, maybe look into Agbogbloshie on another tab.&nbsp;",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "8H3NFPkjQP",
+        "type": "paragraph",
+        "data": {
+          "text": "- Are you aware of the “Repairability Index”? I wasn’t, but I’m a fan.&nbsp;",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "maUPzZ6y_-",
+        "type": "paragraph",
+        "data": {
+          "text": "The depth and quality of the research are more in-depth that my short notes while the book itself is VERY readable (coming from a person who reads 25-30 fiction books 📚 yearly). That’s all I’ll say - if you read it and have opinions or want to rant, reach out 📩 .",
+          "alignment": "left"
+        }
+      }
+    ],
+    "version": "2.31.0"
+  }
 }

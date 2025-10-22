@@ -1,12 +1,166 @@
 {
   "id": "2025-01-02",
-  "path": "test-path-2",
-  "title": "New Year",
-  "subtitle": "Embracing 2025. Thinking about new beginnings that are about 90 characters long",
-  "thumbnail": "/planting.jpg",
-  "images": [
-      "https://example.com/image1.jpg",
-      "https://example.com/image2.jpg"
-  ],
-  "content": "Welcome to the first post of 2025! This year, we are excited to share new.\nYO ur journey with us as we explore new ideas, projects, and inspirations. Stay tuned for more updates and insights throughout the year.\n\nHappy New Year!\n\n- The Team \n This is a Lorem Ipsum placeholder text to fill the content area. It is used to demonstrate how the text will look in the final layout. The actual content will be added later as we finalize our posts and articles for this year."
+  "path": "sustainability-at-festival",
+  "title": "Sustainability Ideas at a Festival",
+  "subtitle": "Festival can give you more than just music and fun.",
+  "thumbnail": "./planting1.jpg",
+  "content": {
+    "time": 1761167537671,
+    "blocks": [
+      {
+        "id": "SkCFL9ZLOq",
+        "type": "header",
+        "data": {
+          "text": "Sustainability Ideas at a Festival (and what went wrong)",
+          "level": 2,
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "keY1mwk3I4",
+        "type": "paragraph",
+        "data": {
+          "text": "A few weeks ago, I decided to take advantage of the (rare) Scottish sunshine ☀️ and go to a festival. As I was enjoying the music and the atmosphere, something caught my attention...",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "sXz6oHKS1k",
+        "type": "paragraph",
+        "data": {
+          "text": "...the waste bins.&nbsp;",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "gS4UcSqUj5",
+        "type": "paragraph",
+        "data": {
+          "text": "It started so promising, and yet...the internal alarms were ringing 🔔&nbsp;",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "hgadDufSaa",
+        "type": "paragraph",
+        "data": {
+          "text": "The promising start included:",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "Oqsi0phErP",
+        "type": "paragraph",
+        "data": {
+          "text": "- Bins for recycling ♻️&nbsp;",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "QcKAPoqQdk",
+        "type": "paragraph",
+        "data": {
+          "text": "- Separate bins for compostable items 🍎&nbsp;",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "Jr5m8wF_Ef",
+        "type": "paragraph",
+        "data": {
+          "text": "- Stickers, describing what should or shouldn't go in every bin (Very important, as people can get confused about what to put in each bin).",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "LQY1Sqseh1",
+        "type": "paragraph",
+        "data": {
+          "text": "- Promotion of the use of reusable bottles in the event with a refill station or two placed around the event",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "noijG5n7VT",
+        "type": "paragraph",
+        "data": {
+          "text": "Those were all good things ✅ . Now, where do things go wrong 🙅‍♀️ ?&nbsp;",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "SuL9fJBXWP",
+        "type": "paragraph",
+        "data": {
+          "text": "As I started observing the bins (as one does in a festival, I suppose), a few things became clear:",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "XiUUHwhCQA",
+        "type": "paragraph",
+        "data": {
+          "text": "- The bins weren't colour coded. Some red bins were for compostable items, others for recycling. Same for the blue bins.",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "hPIB_WakM5",
+        "type": "paragraph",
+        "data": {
+          "text": "- Take the colour coding out of the equation (not everyone can keep track of what each colour stands for or perceive the colours). The sticker in each bin was only placed on 1 side of the bin. That means that unless someone took time to find the side with the information on it (which nobody really did, yes, I checked), they would throw their waste in at random - some taking shots🏀 from a distance 🗑️ .",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "OVZHYn4MV7",
+        "type": "paragraph",
+        "data": {
+          "text": "...which means that likely all of the bins ended up being a mix of compostable, recyclable and non-compostable/non-recyclable items. If a recycling bin has more than 5% contamination (can vary slightly between facilities/countries), it can no longer be recycled. That means the whole effort of trying to separate recyclable and compostable items from other items will go to waste 🤦‍♀️ .&nbsp;",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "SuE-l6zidU",
+        "type": "paragraph",
+        "data": {
+          "text": "Literally.&nbsp;",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "nVXGcO7Xxv",
+        "type": "paragraph",
+        "data": {
+          "text": "So what's the solution 🤔 ?&nbsp;",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "fWEdXKd1pn",
+        "type": "paragraph",
+        "data": {
+          "text": "Don't take half measures. A tokenistic approach to sustainability won't work. While some sustainability initiatives were in place on this occasion, their successful implementation didn't feel like it was taken into account. Placing bins with information on them and having vendors with compostable items on location is only Step 1. There are many more to take.&nbsp;",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "XApQBG3P_0",
+        "type": "paragraph",
+        "data": {
+          "text": "From my point of view, a good next step would be to have teams allocated to various waste collection spots around the venue. They can be briefed about what to allow in each bin before the event. Then, they can advise each person that approaches if their item is recyclable, compostable or neither and direct them to the appropriate bin. (Yes, I've seen a real-life example of this system once before 🌟 !). Will this solve everything? Probably not, but it would be a good next step.&nbsp;",
+          "alignment": "left"
+        }
+      },
+      {
+        "id": "4yAiCgOZ1f",
+        "type": "paragraph",
+        "data": {
+          "text": "What steps 👣 would you recommend?",
+          "alignment": "left"
+        }
+      }
+    ],
+    "version": "2.31.0"
+  }
 }

@@ -13,11 +13,6 @@
   // name of the file with picture to be shown as a picture for the project card
   // in the list of projects obn the `/projects` page
   "thumbnail": "planting-preview.jpg",
-  // list of filenames with images to be shown in the individual post
-  "images": [
-      "planting1.jpg",
-      "planting2.jpg"
-  ],
   // the main content of the post in text format
   "content": "Welcome to the first post of 2025! This year, we are excited to share new.\nYO ur journey with us as we explore new ideas, projects, and inspirations. Stay tuned for more updates and insights throughout the year.\n\nHappy New Year!\n\n- The Team \n This is a Lorem Ipsum placeholder text to fill the content area. It is used to demonstrate how the text will look in the final layout. The actual content will be added later as we finalize our posts and articles for this year."
 }

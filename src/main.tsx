@@ -4,7 +4,6 @@ import Homepage from './routes/homepage'
 import { lazy, LocationProvider, ErrorBoundary, Router, Route, useLocation } from 'preact-iso';
 import Footer from './shared/components/footer';
 import Header from './shared/components/header';
-import BackButton from './shared/components/back-button';
 
 
 const Projects = lazy(() => import('./routes/projects'));
@@ -20,7 +19,6 @@ function Layout({ children, hasBackButton }: { children: preact.ComponentChildre
 
   return <>
     <Header />
-    <BackButton />
     <main>
       {children}
     </main>
@@ -28,28 +26,20 @@ function Layout({ children, hasBackButton }: { children: preact.ComponentChildre
   </>
 }
 
+// todo: add 404 route
+// todo: try lazy loading for routes
 const App = () => {
   return <>
     <LocationProvider scope="/app">
-      <ErrorBoundary>
-        <Router>
-          <Route path="/" component={
-            () => <Layout>
-              <Homepage />
-            </Layout>
-          } />
-          <Route path="/projects" component={
-            () => <Layout>
-              <Projects />
-            </Layout>
-          } />
-          <Route path="/post/:id" component={
-            () => <Layout>
-              <BlogPost />
-            </Layout>
-          } />
-        </Router>
-      </ErrorBoundary>
+      <Layout>
+        <ErrorBoundary>
+          <Router>
+            <Route path="/" component={() => <Homepage />} />
+            <Route path="/projects" component={() => <Projects />} />
+            <Route path="/post/:id" component={() => <BlogPost />} />
+          </Router>
+        </ErrorBoundary>
+      </Layout>
     </LocationProvider >
   </>
 }
